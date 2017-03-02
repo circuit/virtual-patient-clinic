@@ -1,0 +1,35 @@
+[
+  {
+    "id": "100",
+    "firstName": "Theo",
+    "lastName": "Leslie",
+    "doctor": {
+        "name": "Dr. Bobby Smith",
+        "userId": "99dfc91b-999d-4840-9c49-df344fb07fc5"
+    }
+  }, {
+    "id": "101",
+    "firstName": "Karin",
+    "lastName": "Heidelberg",
+    "doctor": {
+        "name": "Dr. Bobby Smith",
+        "userId": "99dfc91b-999d-4840-9c49-df344fb07fc5"
+    }
+  }, {
+    "id": "102",
+    "firstName": "Sebastian",
+    "lastName": "Vettel",
+    "doctor": {
+        "name": "Dr. Bobby Smith",
+        "userId": "99dfc91b-999d-4840-9c49-df344fb07fc5"
+    }
+  }, {
+    "id": "103",
+    "firstName": "Bernhard",
+    "lastName": "Russi",
+    "doctor": {
+        "name": "Dr. Alice Miller",
+        "userId": "c2e5d330-5ea2-4f85-aba1-2c00dac2991a"
+    }
+  }
+]

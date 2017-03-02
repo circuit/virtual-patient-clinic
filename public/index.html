@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VPC - Patient</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <style>[v-cloak] { display: none; }</style>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <div v-if="data">
+        <p>Hi {{data.firstName}},</p>
+        <p>You are in the waiting room to see {{data.doctor && data.doctor.name}}.</p>
+        <p>The estimated waiting time is {{data.wait}} minutes at which time you will be connected to the doctor.</p>
+    </div>
+    <div v-else>You need to create an appointment first</div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

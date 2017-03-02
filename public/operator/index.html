@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VPC - Operator</title>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <style>[v-cloak] { display: none; }</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <h2>Patient Waiting List</h2>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Doctor</th>
+                <th style="width:85px">Status</th>
+                <th style="width:65px">Wait</th>
+                <th style="width:80px">Message</th>
+                <th style="width:80px">Connect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="patient in patients">
+                <td>{{patient.id}}</td>
+                <td>{{patient.firstName}} {{patient.lastName}}</td>
+                <td>{{patient.doctor.name}}</td>
+                <td>{{patient.status}}</td>
+                <td class="text-center">{{patient.wait}} min</td>
+                <td class="text-center"><span><a v-on:click="message"><i class="glyphicon glyphicon-log-in"></i></a></span></td>
+                <td class="text-center"><span><a v-on:click="connect(patient)"><i class="glyphicon glyphicon-edit"></i></a></span></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>
