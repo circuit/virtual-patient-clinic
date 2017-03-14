@@ -19,8 +19,7 @@ let app = new Vue({
     el: '#app',
     data: {
         info: {},
-        id: null,
-        patientExampleUrl: location.origin + '?id=100',
+        id: null
     },
     created: function() {
         let params = getParams(window.location.search);

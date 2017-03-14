@@ -15,8 +15,17 @@
         <p>The estimated waiting time is {{info.wait}} minutes at which time you will be connected to the doctor.</p>
     </div>
     <div v-else>
-      <p>Login as one of the patients.</p>
-      <p>For example <a v-bind:href="patientExampleUrl">{{patientExampleUrl}}</a>.</p>
+      <h2>Circuit Virtual Private Clinic Demo</h2>
+      <p>This demo shows virtual clinic where patients consult doctors via a browser. Patients get their appointments via email with a link to enter the waiting room.
+        The clinic administrator (or doctors themselves) can view the waiting list and connect the patient with the doctor.</p>
+      <p>Source code of this demo is available on <a href="https://github.com/circuit/virtual-patient-clinic">github</a>.</p>
+      <br>
+      <h3>How to use the demo</h3>
+      <p>Login as doctor to the regular Circuit client at <a href="https://circuitsandbox.net">https://circuitsandbox.net</a> as <i>doctor.nick@mailinator.com</i> with password <i>Nick.123!</i></p>
+      <p>On another browser tab view the <a href="/operator">waiting list</a>.</p>
+      <p>On another browser tab open a patient: <a href="/?id=100">Patient 100</a>, <a href="/?id=101">Patient 101</a>, <a href="/?id=102">Patient 102</a>, <a href="/?id=103">Patient 103</a></p>
+      <p>Then connect a patient to his/her doctor using 'connect' button on the waiting list.</p>
+      <p>A new conversation is automatically created for this consultation. Start the call on that new conversation using the doctors Circuit client.</p>
     </div>
   </div>
 
