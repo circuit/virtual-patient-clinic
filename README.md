@@ -22,14 +22,8 @@ Edit `appointments.json` with your appointments. In real life this would pull fr
     git clone https://github.com/circuit/virtual-patient-clinic.git
     cd virtual-patient-clinic
     cp config.json.template config.json
-    // Add your bot credentials
+    // Add your bot credentials to config.json
     // Edit appointments.json with userId of your doctors
-    npm install
-```
-
-#### Run the app
-
-```bash
     npm install
     curl "https://circuitsandbox.net/circuit.tgz" -o "circuit.tgz"
     npm install circuit.tgz

@@ -9,12 +9,15 @@
 </head>
 <body>
   <div id="app" v-cloak>
-    <div v-if="data">
-        <p>Hi {{data.firstName}},</p>
-        <p>You are in the waiting room to see {{data.doctor && data.doctor.name}}.</p>
-        <p>The estimated waiting time is {{data.wait}} minutes at which time you will be connected to the doctor.</p>
+    <div v-if="id">
+        <p>Hi {{info.firstName}},</p>
+        <p>You are in the waiting room to see {{info.doctor && info.doctor.name}}.</p>
+        <p>The estimated waiting time is {{info.wait}} minutes at which time you will be connected to the doctor.</p>
     </div>
-    <div v-else>You need to create an appointment first</div>
+    <div v-else>
+      <p>Login as one of the patients.</p>
+      <p>For example <a v-bind:href="patientExampleUrl">{{patientExampleUrl}}</a>.</p>
+    </div>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>

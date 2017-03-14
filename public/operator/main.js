@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', event => {
                 console.log(`Connect patient ${patient.firstName} ${patient.lastName}`);
             },
             message: function () {
-                console.log(`Not implemented yet`);
+                alert(`Not implemented yet`);
             }
         },
         data: {

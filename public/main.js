@@ -16,13 +16,22 @@ const getParams = query => {
 let socket;
 
 let app = new Vue({
-    el: "#app",
+    el: '#app',
+    data: {
+        info: {},
+        id: null,
+        patientExampleUrl: location.origin + '?id=100',
+    },
     created: function() {
         let params = getParams(window.location.search);
+        if (!params || !params.id) {
+            return;
+        }
+        this.id = params.id;
         socket = io({query: `patient=${params.id}`});
 
         socket.on('update', data => {
-            this.data = data;
+            this.info = data;
         });
 
         socket.on('redirect', data => {
@@ -46,8 +55,5 @@ let app = new Vue({
         });
     },
     methods: {
-    },
-    data: {
-        data: {}
     }
 });

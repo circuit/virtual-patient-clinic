@@ -33,8 +33,8 @@
                 <td>{{patient.doctor.name}}</td>
                 <td>{{patient.status}}</td>
                 <td class="text-center">{{patient.wait}} min</td>
-                <td class="text-center"><span><a v-on:click="message"><i class="glyphicon glyphicon-log-in"></i></a></span></td>
-                <td class="text-center"><span><a v-on:click="connect(patient)"><i class="glyphicon glyphicon-edit"></i></a></span></td>
+                <td class="text-center"><span :disabled="true" title="Send message to patient"><a v-on:click="message"><i class="glyphicon glyphicon-log-in"></i></a></span></td>
+                <td class="text-center"><span :disabled="patient.status!=='Waiting'" title="Connect with doctor"><a v-on:click="connect(patient)"><i class="glyphicon glyphicon-edit"></i></a></span></td>
             </tr>
         </tbody>
     </table>
