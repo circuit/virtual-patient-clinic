@@ -10,6 +10,12 @@ Future enhancements:
  - Provide patient dial in number in addition to url
  - Circuit integration into the operator console so that operator can easily communicate with doctors 
 
+
+#### Live demo
+
+https://med.circuitsandbox.net
+
+
 ### Getting Started
 
 Rename `config.json.template` to `config.json` and add your bot credentials.
@@ -30,3 +36,5 @@ Edit `appointments.json` with your appointments. In real life this would pull fr
     node server.js
     // Open browsers at http://localhost:3000 and http://localhost:3000/operator
 ```
+
+
