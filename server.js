@@ -127,6 +127,13 @@ io.on('connection', socket => {
             }
         });
 
+        socket.on('disconnect-patient', id => {
+            let patient = patients.find(p => { return p.id === id; });
+            if (patient) {
+                patient.socket.disconnect();
+            }
+        });
+
         socket.on('disconnect', _ => console.log(`Operator disconnected`));
     }
 });

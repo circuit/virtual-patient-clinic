@@ -29,6 +29,7 @@ const config = require('./config.json');
 
 let client;
 let emitter;
+let appointmentNr = 1000;
 
 //Circuit.setLogger(console);
 //Circuit.logger.setLevel(Circuit.Enums.LogLevel.Debug);
@@ -50,7 +51,7 @@ function init (events) {
  * @param {Object} patient 
  */
 function createConversation(patient) {
-    let convPromise = client.createGroupConversation([patient.info.doctor.userId, client.loggedOnUser.userId], `Appt. ${patient.id}`);
+    let convPromise = client.createGroupConversation([patient.info.doctor.userId, client.loggedOnUser.userId], `Appt. ${appointmentNr++}`);
     let detailsPromise = convPromise.then(conv => {
         return client.getConversationDetails(conv.convId);
     });

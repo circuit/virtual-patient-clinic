@@ -24,6 +24,7 @@
                 <th style="width:65px">Wait</th>
                 <th style="width:80px">Message</th>
                 <th style="width:80px">Connect</th>
+                <th style="width:80px">Remove</th>
             </tr>
         </thead>
         <tbody>
@@ -33,8 +34,9 @@
                 <td>{{patient.doctor.name}}</td>
                 <td>{{patient.status}}</td>
                 <td class="text-center">{{patient.wait}} min</td>
-                <td class="text-center"><span :disabled="true" title="Send message to patient"><a v-on:click="message"><i class="glyphicon glyphicon-log-in"></i></a></span></td>
-                <td class="text-center"><span :disabled="patient.status!=='Waiting'" title="Connect with doctor"><a v-on:click="connect(patient)"><i class="glyphicon glyphicon-edit"></i></a></span></td>
+                <td class="text-center"><span title="Send message to patient"><a :disabled="true" v-on:click="message"><i class="glyphicon glyphicon-log-in"></i></a></span></td>
+                <td class="text-center"><span title="Connect with doctor"><a :disabled="patient.status!=='Waiting'" v-on:click="connect(patient)"><i class="glyphicon glyphicon-edit"></i></a></span></td>
+                <td class="text-center"><span title="Remove patient from list"><a v-on:click="disconnect(patient)"><i class="glyphicon glyphicon-remove"></i></a></span></td>
             </tr>
         </tbody>
     </table>

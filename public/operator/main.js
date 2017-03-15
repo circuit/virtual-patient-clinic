@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', event => {
                 socket.emit('connect-to-doctor', patient.id)
                 console.log(`Connect patient ${patient.firstName} ${patient.lastName}`);
             },
+            disconnect: function (patient) {
+                socket.emit('disconnect-patient', patient.id)
+                console.log(`Disonnect patient ${patient.firstName} ${patient.lastName}`);
+            },
             message: function () {
                 alert(`Not implemented yet`);
             }
