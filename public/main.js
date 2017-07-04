@@ -13,9 +13,9 @@ const getParams = query => {
 };
 
 
-let socket;
+var socket;
 
-let app = new Vue({
+var app = new Vue({
     el: '#app',
     data: {
         info: {},
