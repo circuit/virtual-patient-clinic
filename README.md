@@ -15,6 +15,7 @@ Future enhancements:
 
 https://med.circuitsandbox.net
 
+[![Virtual Patient Clinic](http://img.youtube.com/vi/Rn_aUgahi7U/0.jpg)](http://www.youtube.com/watch?v=Rn_aUgahi7U "Video Title")
 
 ### Getting Started
 
