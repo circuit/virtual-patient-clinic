@@ -23,8 +23,7 @@
 /* jslint node: true */
 'use strict';
 
-
-const Circuit = require('circuit');
+const Circuit = require('circuit-node-sdk');
 const config = require('./config.json');
 
 let client;
@@ -48,7 +47,7 @@ function init (events) {
 
 /**
  * Create a conversation between the patient and doctor
- * @param {Object} patient 
+ * @param {Object} patient
  */
 function createConversation(patient) {
     let convPromise = client.createGroupConversation([patient.info.doctor.userId, client.loggedOnUser.userId], `Appt. ${appointmentNr++}`);
