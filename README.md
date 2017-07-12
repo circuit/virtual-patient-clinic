@@ -32,8 +32,6 @@ Edit `appointments.json` with your appointments. In real life this would pull fr
     // Add your bot credentials to config.json
     // Edit appointments.json with userId of your doctors
     npm install
-    curl "https://circuitsandbox.net/circuit.tgz" -o "circuit.tgz"
-    npm install circuit.tgz
     node server.js
     // Open browsers at http://localhost:3000 and http://localhost:3000/operator
 ```
