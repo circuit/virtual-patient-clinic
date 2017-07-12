@@ -1,14 +1,14 @@
 {
   "name": "virtual-patient-clinic",
   "version": "0.0.1",
-  "description": "",
+  "description": "Node.js application for virtual appointments with doctors using the Circuit SDK",
   "main": "server.js",
   "dependencies": {
-    "circuit": "file:circuit.tgz",
+    "circuit-node-sdk": "^1.2.1200",
     "express": "^4.14.1",
     "socket.io": "^1.7.3"
   },
   "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  "author": "Roger Urscheler, Unify Inc.",
+  "license": "Apache 2.0"
 }
