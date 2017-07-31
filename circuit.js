@@ -23,7 +23,7 @@
 /* jslint node: true */
 'use strict';
 
-const Circuit = require('circuit-node-sdk');
+const Circuit = require('circuit-sdk');
 const config = require('./config.json');
 
 let client;
