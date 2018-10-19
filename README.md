@@ -2,18 +2,18 @@
 
 Patients get a url for virtual appointment with which they are connected to the clinic operator.  The clinic operator sees all patients with their doctor to be seen and can then connect a patient to the doctor.
 
-Prior to connecting a patient to a doctor the communication is done via socket.io, without Circuit involvement. Once the operator connects the patient with a doctor, the patient make use of Circuit's guest feature. A bot is monitoring the calls which is how the operators console is kept up to date. 
+Prior to connecting a patient to a doctor the communication is done via socket.io, without Circuit involvement. Once the operator connects the patient with a doctor, the patient make use of Circuit's guest feature. A bot is monitoring the calls which is how the operators console is kept up to date.
 
 Future enhancements:
 
  - Socket.io messaging between operator and patient, prior to connecting to doctor
  - Provide patient dial in number in addition to url
- - Circuit integration into the operator console so that operator can easily communicate with doctors 
+ - Circuit integration into the operator console so that operator can easily communicate with doctors
 
 
 #### Live demo
 
-https://med.circuitsandbox.net
+https://virtual-patient-clinic.appspot.com/
 
 [![Virtual Patient Clinic](http://img.youtube.com/vi/Rn_aUgahi7U/0.jpg)](http://www.youtube.com/watch?v=Rn_aUgahi7U "Video Title")
 
