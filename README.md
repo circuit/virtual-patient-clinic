@@ -13,7 +13,7 @@ Future enhancements:
 
 #### Live demo
 
-https://virtual-patient-clinic.appspot.com/
+https://med.circuit-apps.com
 
 [![Virtual Patient Clinic](http://img.youtube.com/vi/Rn_aUgahi7U/0.jpg)](http://www.youtube.com/watch?v=Rn_aUgahi7U "Video Title")
 
