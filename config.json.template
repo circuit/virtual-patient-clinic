@@ -3,6 +3,7 @@
 	    "domain": "circuitsandbox.net",
 		"client_id": "<client_id>",
 		"client_secret": "<client_secret>",
-		"autoRenewToken": true
+		"autoRenewToken": true,
+		"scope": "READ_CONVERSATIONS,WRITE_CONVERSATIONS,READ_USER,READ_USER_PROFILE"
 	}
 }
