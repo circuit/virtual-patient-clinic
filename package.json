@@ -4,9 +4,9 @@
   "description": "Node.js application for virtual appointments with doctors using the Circuit SDK",
   "main": "server.js",
   "dependencies": {
-    "circuit-sdk": "^1.2.1200",
-    "express": "^4.14.1",
-    "socket.io": "^1.7.3"
+    "circuit-sdk": "latest",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {},
   "author": "Roger Urscheler, Unify Inc.",
